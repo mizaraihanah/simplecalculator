@@ -52,16 +52,7 @@ function calculateResult() {
         }
         display.value = result;
         localStorage.setItem("calcHistory", result);
-        saveToHistory(display.value);
     } catch (e) {
         showError("Invalid Expression!");
     }
-}
-
-function saveToHistory(result) {
-    fetch("process.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: "result=" + encodeURIComponent(result)
-    });
 }

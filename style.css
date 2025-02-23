@@ -1,0 +1,48 @@
+body {
+    background-color: #e9ecef; /* Muted background */
+}
+
+.container {
+    max-width: 600px; /* Keeps everything centered */
+}
+
+.calculator, .history-section {
+    width: 280px; /* Same width for both sections */
+    height: 400px; /* Fixed height */
+    background: #f8f9fa; /* Light muted color */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures a clean layout */
+}
+
+.history-section {
+    overflow-y: auto; /* Scroll bar appears when needed */
+    padding: 10px;
+}
+
+h4, h5 {
+    color: #6c757d; /* Muted text */
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid black; /* Outline border for all buttons */
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.outlined {
+    border: 1px solid black; /* Extra outline */
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 5px;
+    white-space: nowrap; /* Prevents wrapping */
+}

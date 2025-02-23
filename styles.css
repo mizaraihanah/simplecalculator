@@ -1,0 +1,28 @@
+body {
+    background-color: #e9ecef; /* Muted background */
+}
+
+.calculator {
+    width: 260px; /* Smaller size */
+    background: #f8f9fa; /* Light muted color */
+    border-radius: 8px;
+}
+
+h4 {
+    color: #6c757d; /* Muted text */
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid black; /* Outline border for all buttons */
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.outlined {
+    border: 1px solid black; /* Extra outline */
+}
